@@ -467,7 +467,7 @@ Finalizar atendimento | Orientar cliente a retirar mercadoria na expedição | O
 
 if arquivo_carregado is not None:
     bytes_arq = arquivo_carregado.read()
-    cab_ lido, etp_lido, msg = importar_arquivo_fluxo(arquivo_carregado.name, bytes_arq)
+    cab_lido, etp_lido, msg = importar_arquivo_fluxo(arquivo_carregado.name, bytes_arq)
     if etp_lido:
         cabecalho_inicial = cab_lido
         etapas_iniciais = etp_lido
