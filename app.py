@@ -453,17 +453,8 @@ st.markdown("Ferramenta web para criação, edição e exportação de fluxogram
 st.sidebar.header("🔄 Importar / Carregar Fluxo")
 arquivo_carregado = st.sidebar.file_uploader("Envie um arquivo (.PDF, .PNG ou .SVG)", type=['pdf', 'png', 'svg'])
 
-cabecalho_inicial = "Abertura, Operação de Caixa e Atendimento – Setor de Caixa – Guga Material de Construção"
-etapas_iniciais = """Abrir terminal de caixa | Conferir fundo de troco e iniciar sistema | Operador de Caixa | Diária | Termo de Abertura
-[ESPERA] Aguardar liberação de supervisor | Solicitar autorização via sistema interno | Operador de Caixa | Por Demanda | Tela de Liberação
-[REF] Registrar Contas a Pagar | Consultar POP financeiro de lançamento de despesas | Operador de Caixa | Por Venda | Sistema Financeiro
-Localizar pedido no sistema | Receber número da ficha do cliente e consultar pré-venda | Operador de Caixa | Por Venda | Tela de Pedido
-Forma de pagamento correta? | [VOLTAR:1] | | |
-Receber pagamento | Processar transação (PIX, cartão ou espécie) | Operador de Caixa | Por Venda | Comprovante
-Emitir e entregar Nota Fiscal | Autorizar emissão no sistema | Operador de Caixa | Por Venda | Nota Fiscal
-Pedido possui entrega? | [PULAR:2:1] | | |
-Emitir e arquivar guia de entrega | Imprimir guia e guardar no setor | Operador de Caixa | Por Demanda | Guia de Entrega
-Finalizar atendimento | Orientar cliente a retirar mercadoria na expedição | Operador de Contínua | Pedido Finalizado"""
+cabecalho_inicial = ""
+etapas_iniciais = """"""
 
 if arquivo_carregado is not None:
     bytes_arq = arquivo_carregado.read()
